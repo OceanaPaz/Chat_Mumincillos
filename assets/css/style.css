@@ -1,0 +1,96 @@
+body {
+  background-color: #dfc3f1;
+}
+
+.chat-list {
+  padding: 0;
+}
+
+.chat-item {
+  align-items: center;
+  padding: 10px;
+  background-color: #805ba5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.chat-item img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.chat-item span {
+  font-weight: bold;
+}
+
+.chat-item:hover {
+  background-color: #495057;
+}
+
+.chat-window {
+  height: 80vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.message {
+  margin-bottom: 20px;
+}
+
+.user-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.message-to-you{
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.message-content {
+  max-width: 35%;
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.message-content:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+}
+
+.message-content.bg-primary {
+  background-color: #007bff;
+}
+
+.message-content.bg-primary:before {
+  left: -10px;
+  border-right-color: #007bff;
+}
+
+.message-content.bg-light {
+  background-color: #f8f9fa;
+  border: 1px solid #686a6b84;
+}
+
+.message-content.bg-light:before {
+  right: -10px;
+  border-left-color: #f8f9fa;
+}
+
+.input-group {
+  position: fixed;
+  bottom: 20px;
+  width: 70%;
+}
